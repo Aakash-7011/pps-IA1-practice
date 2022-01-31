@@ -1,0 +1,25 @@
+(gdb) b main
+Breakpoint 1 at 0x952: file p6original.c, line 58.
+(gdb) r
+Starting program: /home/runner/pps-IA1-practice-1/a.out 
+warning: Error disabling address space randomization: Operation not permitted
+
+Breakpoint 1, main () at p6original.c:58
+58  {
+(gdb) n
+61      input_two_string(a,b);
+(gdb) n
+enter any word:
+world
+enter any word:
+hello
+62      ans=cmp(a,b);
+(gdb) n
+63      output(a,b,ans);
+(gdb) n
+world is greater than hello
+64      return 0;
+(gdb) c
+Continuing.
+[Inferior 1 (process 636) exited normally]
+(gdb) 
